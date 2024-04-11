@@ -2,11 +2,9 @@
 
 @section('content')
 
-    @if (Session::get('success_message'))
-        <div class="alert alert-success" id="success-message">{{ Session::get('success_message') }}</div>
-        
-    @endif
-
+<div class="col-lg-8 col-md-10 mx-auto shadow rounded p-3 mb-5">
+    <h5 class="text-muted text-center"> Editer un produit</h5>
+</div>
 
     <div class="row">
         <div class="col-md-4"></div>
@@ -15,7 +13,7 @@
             <!-- general form elements -->
             <div class="card card-secondary">
             <div class="card-header">
-                <h3 class="card-title">Editer un produit</h3>
+                {{-- <h3 class="card-title">Editer un produit</h3> --}}
             </div>
             <!-- /.card-header -->
             <!-- form start -->

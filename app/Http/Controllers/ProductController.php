@@ -56,7 +56,7 @@ class ProductController extends Controller
 
     public function update($id, ProductNewRequest $request)
     {
-        
+
         $product = Product::find($id);
         //Enregistrer un nouveau département
         $date = Carbon::now();
@@ -74,6 +74,23 @@ class ProductController extends Controller
         } catch (Exception $e) {
             dd($e);
         }
+    }
+
+    public function delete($id)
+    {
+        $product = Product::find($id);
+        try {
+            $product->delete();
+
+            return redirect()->route('product.index')->with('success_message', 'Produit supprimé avec succès');
+        } catch (Exception $e) {
+            dd($e);
+        }
+    }
+
+    public function accueil(){
+
+        return view('accueil');
     }
     
 }

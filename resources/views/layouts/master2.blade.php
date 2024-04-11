@@ -117,7 +117,7 @@
                             with font-awesome or any other icon font library -->
 
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="{{ route('accueil') }}" class="nav-link">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Accueil
@@ -125,7 +125,6 @@
                             </a>
                         </li>
                         
-                        {{-- Utilisateurs --}}
                           <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="fas fa-shopping-bag"></i>
@@ -155,65 +154,6 @@
 
                             </ul>
                         </li>
-
-                            {{-- Client --}}
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-users"></i>
-
-                                <p>
-                                    Clients
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Liste des clients</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Ajouter un client</p>
-                                    </a>
-                                </li>
-
-
-                            </ul>
-                        </li>
-                        
-                        
-                       
-                       
-                            {{-- Facture --}}
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-file-invoice-dollar"></i>
-
-                                <p>
-                                    Factures
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Liste des factures</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Ajouter une facture</p>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </li> 
-                          
 
                 </nav>
                 <!-- /.sidebar-menu -->
