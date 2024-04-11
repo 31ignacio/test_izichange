@@ -52,12 +52,11 @@
                   <td>{{ \Carbon\Carbon::parse($product->creationDate)->format('d/m/Y') }}</td>
 
                   <td>
-                    {{-- <a href="{{ route('client.detail', ['client' => $client->id]) }}" class="btn-sm btn-primary"><i class="fas fa-eye"></i></a>
-                    <a class="btn-sm btn-warning" href="{{ route('client.edit', $client->id) }}"><i class="fas fa-edit"></i></a>
+                    <a class="btn-sm btn-warning" href="{{ route('product.edit', ['id' => $product->id]) }}" title="Modifier un produit"><i class="fas fa-edit"></i></a>
 
                     
                    
-                    <a class="btn-sm btn-danger" href="{{ route('client.delete', $client->id) }}"><i class="fas fa-trash-alt"></i></a> --}}
+                    {{-- <a class="btn-sm btn-danger" href="{{ route('client.delete', $client->id) }}"><i class="fas fa-trash-alt"></i></a> --}}
                  
                    
                   </td>

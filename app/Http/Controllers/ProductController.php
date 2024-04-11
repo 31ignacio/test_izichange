@@ -46,4 +46,34 @@ class ProductController extends Controller
             dd($e);
         }
     }
+
+    public function edit($id){
+
+        $product = Product::find($id);
+
+        return view('templates.product.edit', compact('product'));
+    }
+
+    public function update($id, ProductNewRequest $request)
+    {
+        
+        $product = Product::find($id);
+        //Enregistrer un nouveau département
+        $date = Carbon::now();
+        $dateFormatee = $date->format('Y-m-d H:i:s');
+
+        try {
+            $product->name = $request->name;
+            $product->priceHt = $request->priceHt;
+            $product->dateUpdate = $dateFormatee;
+
+
+            $product->update();
+
+            return redirect()->route('product.index')->with('success_message', 'Produit mis à jour avec succès');
+        } catch (Exception $e) {
+            dd($e);
+        }
+    }
+    
 }
