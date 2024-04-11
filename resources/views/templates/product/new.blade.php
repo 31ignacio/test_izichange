@@ -5,7 +5,7 @@
     
 
     <div class="col-lg-8 col-md-10 mx-auto shadow rounded p-3 mb-5">
-        <h5 class="text-muted text-center"> Ajouter un produit</h5>
+        <h5 class="text-muted text-center"> Ajouter un produit </h5>
     </div>
 
     
